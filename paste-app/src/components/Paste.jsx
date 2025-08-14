@@ -40,7 +40,7 @@ const Paste = () => {
               className="relative bg-[#161b22] shadow-sm rounded-lg border border-gray-800 p-4 hover:shadow-md transition-shadow"
               key={paste._id}
             >
-              {/* Action Icons in top-right */}
+              
               <div className="absolute top-3 right-3 flex gap-3 text-gray-400">
                 <a href={`/?pasteId=${paste._id}`} title="Edit" className="hover:text-white">
                   <FiEdit size={18} />
@@ -88,16 +88,10 @@ const Paste = () => {
                   <FiShare2 size={18} />
                 </button>
               </div>
-
-              {/* Paste Title */}
               <p className="font-semibold text-lg text-white pr-28">{paste.title}</p>
-
-              {/* Paste Content */}
               <p className="text-gray-300 mt-1 whitespace-pre-wrap break-words">
                 {paste.content}
               </p>
-
-              {/* Created Date */}
               <div className="text-xs text-gray-500 mt-3">
                 {paste.createdAt}
               </div>
